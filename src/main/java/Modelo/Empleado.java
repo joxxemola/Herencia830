@@ -4,10 +4,3 @@
  */
 package Modelo;
 
-/**
- *
- * @author Usuario
- */
-public class Empleado {
-    
-}

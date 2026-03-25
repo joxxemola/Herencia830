@@ -4,10 +4,11 @@
  */
 package Modelo;
 
-/**
- *
- * @author Usuario
- */
+
 public class Gerente {
-    
+
+     
+
+
+
 }
