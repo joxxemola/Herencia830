@@ -9,5 +9,21 @@ package Controlador;
  * @author Usuario
  */
 public class NominaController {
+    protected String nombre;
+    protected double salarioBase;
     
+    public NominaController (String nombre, double salarioBase){
+        this.nombre = nombre;
+        this.salarioBase = salarioBase;
+    }
+    
+    //metodo para polimórfico
+    
+    public double calcularPago(){
+        return salarioBase;
+    }
+    
+    public String getNombre(){
+        return nombre;
+    }
 }
