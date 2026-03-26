@@ -19,7 +19,18 @@ public class NominaController {
     }
     
     //Registro de empleados 
+    public void RegistrarEmpleados(Empleado e){
     
+        listaEmpleados.add(e);
+        
+        //sobrecarga
+        public Empleado buscar(String nombre){  
+            
+            for(Empleado e: listaEmpleados){
+            
+            }        
+        }
+    }
     
      
  }
