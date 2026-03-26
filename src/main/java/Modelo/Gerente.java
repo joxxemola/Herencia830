@@ -4,11 +4,19 @@
  */
 package Modelo;
 
+public class Gerente extends Empleado {
 
-
-public class Gerente extends Empleado{
-    
     private double bono;
 
+    public Gerente(String nombre, double salarioBase, double bono) {
+
+        super(nombre, salarioBase);//herencia del constructor
+        this.bono = bono;
+    }
+
+    @Override //sobre escritura:
+    public double calcularPago() {
+        return salarioBase + bono;
+    }
 
 }

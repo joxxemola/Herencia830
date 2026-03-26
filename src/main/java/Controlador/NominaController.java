@@ -6,26 +6,7 @@ package Controlador;
 
 
 public class NominaController {
-    //atributos
-    
-    protected String nombre;
-    protected double salarioBase;
-
-    public NominaController(String nombre, double salarioBase) {
-        this.nombre = nombre;
-        this.salarioBase = salarioBase;
-    }
-    
-    //metodo sera polimórfico
-    
-    public double calcuclarPago(){
-        
-        return salarioBase;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
+   
     
      
  }
