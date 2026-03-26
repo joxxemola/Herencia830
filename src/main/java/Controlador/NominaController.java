@@ -9,49 +9,47 @@ import Modelo.Gerente;
 import java.util.ArrayList;
 
 public class NominaController {
-   
+
     private ArrayList<Empleado> listaEmpleados;
     //crear atributos
 
     public NominaController() {
-        
-        this.listaEmpleados= new ArrayList<>(); 
+
+        this.listaEmpleados = new ArrayList<>();
     }
-    
+
     //Registro de empleados 
-    public void RegistrarEmpleados(Empleado e){
-    
+    public void RegistrarEmpleados(Empleado e) {
+
         listaEmpleados.add(e);
-          
+
     }
-    
+
     //sobrecarga
-    public Empleado buscar(String nombre){  
-            
-        for(Empleado e: listaEmpleados){
-            if(e.getNombre().equalsIgnoreCase(nombre)){
+    public Empleado buscar(String nombre) {
+
+        for (Empleado e : listaEmpleados) {
+            if (e.getNombre().equalsIgnoreCase(nombre)) {
                 return e;
             }
-               
-        }   
+
+        }
         return null;
     }
-    
+
     //sobrecarga: buscar po la posicion de la ista
-    public Empleado buscar(int indice){
-        
-        if(indice>=0 && indice < listaEmpleados.size()){
-            
+    public Empleado buscar(int indice) {
+
+        if (indice >= 0 && indice < listaEmpleados.size()) {
+
             return listaEmpleados.get(indice);
-        } 
+        }
         return null;
     }
-    
-    public ArrayList<Empleado> obtenerLita (){
-        
+
+    public ArrayList<Empleado> obtenerLita() {
+
         return listaEmpleados;
     }
-    
-    
-     
- }
+
+}
