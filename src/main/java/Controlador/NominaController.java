@@ -4,9 +4,22 @@
  */
 package Controlador;
 
+import Modelo.Empleado;
+import Modelo.Gerente;
+import java.util.ArrayList;
 
 public class NominaController {
    
+    private ArrayList<Empleado> listaEmpleados;
+    //crear atributos
+
+    public NominaController() {
+        
+        this.listaEmpleados= new ArrayList<>(); 
+    }
+    
+    //Registro de empleados 
+    
     
      
  }
