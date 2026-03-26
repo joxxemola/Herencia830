@@ -22,15 +22,36 @@ public class NominaController {
     public void RegistrarEmpleados(Empleado e){
     
         listaEmpleados.add(e);
-        
-        //sobrecarga
-        public Empleado buscar(String nombre){  
-            
-            for(Empleado e: listaEmpleados){
-            
-            }        
-        }
+          
     }
+    
+    //sobrecarga
+    public Empleado buscar(String nombre){  
+            
+        for(Empleado e: listaEmpleados){
+            if(e.getNombre().equalsIgnoreCase(nombre)){
+                return e;
+            }
+               
+        }   
+        return null;
+    }
+    
+    //sobrecarga: buscar po la posicion de la ista
+    public Empleado buscar(int indice){
+        
+        if(indice>=0 && indice < listaEmpleados.size()){
+            
+            return listaEmpleados.get(indice);
+        } 
+        return null;
+    }
+    
+    public ArrayList<Empleado> obtenerLita (){
+        
+        return listaEmpleados;
+    }
+    
     
      
  }
