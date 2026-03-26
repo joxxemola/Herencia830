@@ -5,10 +5,10 @@
 package Modelo;
 
 
-public class Gerente {
 
-     
-
+public class Gerente extends Empleado{
+    
+    private double bono;
 
 
 }
